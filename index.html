@@ -1,22 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flowers Shop</title>
-</head>
-<body>
-    <header>
 
+    <!-- ! font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ! font awesome link-->
+    <script
+      src="https://kit.fontawesome.com/d30d87b001.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ! css link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="flex">
+        <div class="logo">
+          <figure><img src="./assets/logo.png" alt="" /></figure>
+        </div>
+
+        <div class="menu">
+          <ul class="flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About us</a></li>
+            <li id="cart">
+              <a href="#"
+                ><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- * start banner section -->
+      <section class="banner flex container">
+        <div class="banner_content">
+          <h1>ALWAYS <span>FRESH FLOWERS</span></h1>
+          <p>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+
+        <div class="banner_img">
+          <img src="./assets/hero-flower.png" alt="" />
+        </div>
+      </section>
     </header>
 
-    <main>
+    <main class="container">
+      <section class="plants_section">
+        <div class="card_title" style="text-align: center;">
+          <h2><span>Our</span> Plants</h2>
+          <p>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </p>
+        </div>
 
+        <div class="card_parent">
+
+          <div class="card" style="text-align: center;">
+            <img src="./assets/sample-flower-image.png" alt="">
+            <h4>Lily Blossom</h4>
+            <h3>20 USD</h3>
+            <button class="btn_primary">ADD TO CART</button>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="./assets/sample-flower-image.png" alt="">
+            <h4>Lily Blossom</h4>
+            <h3>20 USD</h3>
+            <button class="btn_primary">ADD TO CART</button>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="./assets/sample-flower-image.png" alt="">
+            <h4>Lily Blossom</h4>
+            <h3>20 USD</h3>
+            <button class="btn_primary">ADD TO CART</button>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="./assets/sample-flower-image.png" alt="">
+            <h4>Lily Blossom</h4>
+            <h3>20 USD</h3>
+            <button class="btn_primary">ADD TO CART</button>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="./assets/sample-flower-image.png" alt="">
+            <h4>Lily Blossom</h4>
+            <h3>20 USD</h3>
+            <button class="btn_primary">ADD TO CART</button>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="./assets/sample-flower-image.png" alt="">
+            <h4>Lily Blossom</h4>
+            <h3>20 USD</h3>
+            <button class="btn_primary">ADD TO CART</button>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="./assets/sample-flower-image.png" alt="">
+            <h4>Lily Blossom</h4>
+            <h3>20 USD</h3>
+            <button class="btn_primary">ADD TO CART</button>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="./assets/sample-flower-image.png" alt="">
+            <h4>Lily Blossom</h4>
+            <h3>20 USD</h3>
+            <button class="btn_primary">ADD TO CART</button>
+          </div>
+
+
+        </div>
+      </section>
     </main>
 
-
-    <footer>
-        
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

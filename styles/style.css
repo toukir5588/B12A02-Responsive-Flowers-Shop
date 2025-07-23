@@ -1,0 +1,176 @@
+/* ! common css */
+
+:root {
+  --colorBlack: #000000;
+  --colorOrang: #e95a08;
+  --colorGray: rgba(0, 0, 0, 0.5);
+  --colorDark: #111111;
+  --colorWhite: #ffffff;
+  --fontNoto: "Noto Serif", serif;
+  --fontInter: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+
+.btn_primary {
+  padding: 20px 80px;
+  background: var(--colorOrang);
+  color: var(--colorWhite);
+  font-size: 1rem;
+  font-family: var(--fontInter);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+/* *start nav style */
+
+nav {
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+}
+
+nav ul {
+  gap: 50px;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--colorGray);
+  font-family: var(--fontInter);
+  padding: 10px;
+}
+
+nav ul li:hover a {
+  color: var(--colorDark);
+  font-weight: bold;
+}
+nav ul #cart a {
+  color: var(--colorDark);
+}
+
+/* *start banner style */
+.banner {
+  margin: 150px 0;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.banner .banner_content {
+  max-width: 50%;
+}
+.banner .banner_content h1 {
+  font-size: 4rem;
+  font-family: var(--fontNoto);
+  font-weight: bold;
+  color: var(--colorBlack);
+  margin-bottom: 13px;
+}
+.banner .banner_content h1 span {
+  color: var(--colorOrang);
+}
+.banner .banner_content p {
+  font-family: var(--fontInter);
+  font-size: 1.35rem;
+  color: var(--colorGray);
+}
+
+.banner .banner_img img {
+  width: 100%;
+}
+
+/* * start card area */
+
+.plants_section .card_title h2 {
+  font-family: var(--fontNoto);
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: var(--colorBlack);
+}
+.plants_section .card_title h2 span {
+  color: var(--colorOrang);
+}
+.plants_section .card_title p {
+  font-family: var(--fontInter);
+  font-size: 1.3rem;
+  color: var(--colorGray);
+  padding: 16px 126px;
+}
+.plants_section .card_parent {
+  margin-top: 30px;
+  margin-bottom: 90px;
+  display: grid;
+  font-family: var(--fontInter);
+  grid-template-columns:repeat(4, 1fr) ;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+.plants_section .card_parent .card img {
+  max-width: 100%;
+}
+.plants_section .card_parent .card h3 {
+  font-size:1.3rem ;
+  font-weight: 500;
+  margin-bottom: 30px;
+  
+  
+}
+.plants_section .card_parent .card h4 {
+    font-size:1.3rem ;
+    font-weight: bold;
+    margin: 30px;
+
+}
+
+/* ! mobile responsive design */
+@media screen and (max-width: 576px) {
+  nav {
+    margin: 0 16px;
+    margin-top: 60px;
+    align-items: center;
+  }
+  nav ul li {
+    display: none;
+  }
+  nav ul #cart {
+    display: block;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+  .banner .banner_content {
+    max-width: 100%;
+    padding: 30px;
+  }
+  .banner .banner_content h1 {
+    font-size: 2.5rem;
+  }
+
+  .plants_section .card_title p{
+    padding: 30px;
+  }
+  .plants_section .card_parent{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
