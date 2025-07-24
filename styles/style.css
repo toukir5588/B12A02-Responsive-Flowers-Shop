@@ -179,7 +179,7 @@ nav ul #cart a {
 /* *start latest_deal_section style */
 .latest_deal_section {
   margin: 120px 0;
-  display: none;
+  /* display: none; */
 }
 .latest_deal_section .latest_deal_content {
   margin-bottom: 120px;
@@ -204,7 +204,7 @@ nav ul #cart a {
   margin: 0 auto;
 }
 .latest_deal_section .latest_deal_img_parent {
-  height: 500px;
+  height: 400px;
   display: grid;
   grid-template-areas:
     "child_a child_b child_b"
@@ -237,8 +237,32 @@ nav ul #cart a {
 
 .latest_deal_section .latest_deal_img_parent .bg_color {
   width: 100%;
-  background: black;
-  opacity: 10%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.237);
+  /* opacity: 10%; */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.latest_deal_section .latest_deal_img_parent .bg_color h2 {
+  font-family: var(--fontNoto);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--colorWhite);
+}
+.latest_deal_section .latest_deal_img_parent .bg_color a {
+  color: var(--colorWhite);
+  font-weight: 500;
+  font-family: var(--fontInter);
+}
+
+.latest_deal_section .latest_deal_img_parent .child_b h2 {
+  font-size: 2.5rem;
+}
+.latest_deal_section .latest_deal_img_parent .child_b a {
+  font-size: 1.75rem;
 }
 
 /* !start form design */
@@ -313,10 +337,9 @@ nav ul #cart a {
 .footer .icon {
   display: flex;
   gap: 24px;
-  align-content:flex-start;
+  align-content: flex-start;
   justify-items: center;
-  max-height:37px;
-  
+  max-height: 37px;
 }
 .footer .icon img {
   width: 100%;
@@ -389,6 +412,31 @@ nav ul #cart a {
     margin-left: 25px;
   }
 
+  .latest_deal_section .latest_deal_content {
+    margin-bottom: 0;
+  }
+
+  .latest_deal_section .latest_deal_img_parent {
+    height: 580px;
+    display: grid;
+    grid-template-areas:
+      "child_a"
+      "child_b"
+      "child_c";
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+
+  .latest_deal_section .latest_deal_img_parent .child_b h2 {
+    font-size: 1.2rem;
+  }
+  .latest_deal_section .latest_deal_img_parent .child_b a {
+    font-size: 1rem;
+  }
+
   /* !start form design */
 
   .join_section {
@@ -416,14 +464,14 @@ nav ul #cart a {
   .join_section .join_section_child form #btn {
     padding: 0.8rem;
   }
-  .footer{
+  .footer {
     flex-direction: column;
     margin: 50px 20px;
   }
-  .footer .logo{
+  .footer .logo {
     width: 100%;
   }
-  .footer .icon{
+  .footer .icon {
     max-height: 34px;
     max-width: 216px;
   }
