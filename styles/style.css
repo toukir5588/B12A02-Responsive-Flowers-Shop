@@ -241,6 +241,7 @@ nav ul #cart a {
   opacity: 10%;
 }
 
+/* !start form design */
 .join_section {
   background-image: url(../assets/news-letter-bg.png);
   /* height: 550px; */
@@ -264,7 +265,6 @@ nav ul #cart a {
   margin-bottom: 30px;
 }
 
-
 .join_section .join_section_child form #text_area {
   width: 600px;
   padding: 20px;
@@ -277,7 +277,7 @@ nav ul #cart a {
   border: none;
   outline: none;
 }
-.join_section .join_section_child form #btn { 
+.join_section .join_section_child form #btn {
   padding: 20px 50px;
   /* background: transparent; */
   border: none;
@@ -285,6 +285,42 @@ nav ul #cart a {
   margin-left: -4px;
   color: var(--colorWhite);
   font-weight: 600;
+}
+
+/* ! start footer design */
+.footer {
+  justify-content: space-between;
+  margin: 50px auto;
+  font-family: var(--fontInter);
+  /* gap: 110px */
+}
+.footer .logo {
+  width: 25%;
+}
+.footer p {
+  font-size: 1.3rem;
+  margin-top: 16px;
+  color: var(--colorGray);
+}
+.footer ul li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: var(--colorGray);
+}
+.footer .icon {
+  display: flex;
+  gap: 24px;
+  align-content:flex-start;
+  justify-items: center;
+  max-height:37px;
+  
+}
+.footer .icon img {
+  width: 100%;
+  /* margin: auto 12px; */
 }
 
 /* ! mobile responsive design */
@@ -355,31 +391,40 @@ nav ul #cart a {
 
   /* !start form design */
 
-  .join_section{
+  .join_section {
     /* height: 400px; */
     background-size: cover;
   }
 
   .join_section .join_section_child {
-  height: 276px;
-  margin: 0;
-  
-}
+    height: 276px;
+    margin: 0;
+  }
   .join_section .join_section_child h2 {
-  font-size: 1.4rem;
-  
-}
-/* .join_section .join_section_child form  {
+    font-size: 1.4rem;
+  }
+  /* .join_section .join_section_child form  {
   display: inline;
 } */
-.join_section .join_section_child form #text_area {
-  max-width: 17rem;
-  padding: .8rem;
-  /* background: transparent; */
-  border: none;
-  margin: 0;
-}
-.join_section .join_section_child form #btn {
-  padding: 0.8rem;
-}
+  .join_section .join_section_child form #text_area {
+    max-width: 17rem;
+    padding: 0.8rem;
+    /* background: transparent; */
+    border: none;
+    margin: 0;
+  }
+  .join_section .join_section_child form #btn {
+    padding: 0.8rem;
+  }
+  .footer{
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+  .footer .logo{
+    width: 100%;
+  }
+  .footer .icon{
+    max-height: 34px;
+    max-width: 216px;
+  }
 }
