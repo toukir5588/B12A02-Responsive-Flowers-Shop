@@ -67,6 +67,16 @@ nav ul #cart a {
   color: var(--colorDark);
 }
 
+/* animation*/
+@keyframes rotateImage{
+ from {
+ transform: rotate(0deg);
+ }
+ to {
+  transform: rotate(360deg);
+ }
+}
+
 /* *start banner style */
 .banner {
   margin: 150px 0;
@@ -152,6 +162,7 @@ nav ul #cart a {
   height: 280px;
   top: -116px;
   right: -90px;
+  animation: rotateImage 10s linear infinite;
 }
 .plants_lover_section .plants_img #main_img {
   width: 100%;
